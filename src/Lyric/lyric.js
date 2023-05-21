@@ -17,7 +17,7 @@ const options = {
 export const getLyric=async()=>{
     try {
         const response = await axios.get(Url,options);
-        console.log(response.data);
+        return response
     } catch (error) {
         console.error(error);
     }

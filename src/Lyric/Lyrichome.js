@@ -6,7 +6,7 @@ function Lyrichome() {
 
     useEffect(()=>{
         getLyric()
-        .then((data)=>{
+        .then(({data})=>{
             setLyric(data)
             console.log(data);
         })
