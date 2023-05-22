@@ -9,13 +9,13 @@ function Navbar() {
   return (
     <div className='myNav'>
         <div className='items'>
-            <div>
+            <div className='home'>
                 <Link to='/'><HomeIcon/>Home</Link>
             </div>
-            <div>
+            <div className='Bill'>
                 <Link to='/Bil'><AudiotrackIcon/>BillHome</Link>
             </div>
-            <div>
+            <div className='lyric'>
                 <Link to='/Lyric'><LyricsIcon/>Lyrics</Link>
             </div>
         </div>

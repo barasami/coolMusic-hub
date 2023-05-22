@@ -6,12 +6,17 @@
 .myNav{
     padding-left: 10%;
     padding-right: 70%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     height: 100%;
+    position: fixed;
     
 }
 .items{
     background-color: seagreen;
-    color:cornflowerblue;
+    height: 90%;
+    padding: 2em;
+    justify-content: space-evenly;
 
 
 
