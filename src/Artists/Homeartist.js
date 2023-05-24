@@ -12,7 +12,7 @@ function Homeartist() {
         })
     },[])
   return (
-    <div>Homeartist</div>
+    <div className='relative'>Homeartist</div>
   )
 }
 

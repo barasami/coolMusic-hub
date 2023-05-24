@@ -13,11 +13,45 @@
     
 }
 .items{
-    background-color: seagreen;
+    /* background-color: seagreen; */
     height: 90%;
     padding: 2em;
     justify-content: space-evenly;
-
-
-
+}
+.title{
+    letter-spacing: .1em;
+    text-transform: capitalize;
+}
+.home{
+    margin-top: 2em;
+    margin-bottom: 2.5em;
+}
+.Bill{
+    margin-bottom: 2.5em;
+}
+.hr{
+    margin-top: 3em;
+}
+.lyric{
+    margin-bottom: 2.5em;
+}
+.hrhub{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.hub{
+    letter-spacing: .1em;
+    font-style: italic;
+    
+}
+.links{
+    text-decoration: none;
+    padding-right: .1em;
+    margin: .1em;
+}
+.mycopy{
+    margin-top: 2.5em;
+}
+.copy{
+    letter-spacing: .1em;
 }

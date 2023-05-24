@@ -12,7 +12,7 @@ function Billhome() {
         })
     },[])
   return (
-    <div>Billhome</div>
+    <div className='relative'>Billhome</div>
   )
 }
 

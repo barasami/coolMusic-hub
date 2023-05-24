@@ -6,17 +6,29 @@ import AudiotrackIcon from '@mui/icons-material/Audiotrack';
 import './Navbar.css'
 
 function Navbar() {
+    const yr=new Date().getFullYear()
   return (
     <div className='myNav'>
         <div className='items'>
+            <div>
+                <p className='title'>Cool Music Hub</p>
+            </div>
+            <hr className='hr'></hr>
             <div className='home'>
-                <Link to='/'><HomeIcon/>Home</Link>
+                <Link to='/' className='links'><HomeIcon color='secondary'/>Home</Link>
             </div>
             <div className='Bill'>
-                <Link to='/Bil'><AudiotrackIcon/>BillHome</Link>
+                <Link to='/Bil' className='links'><AudiotrackIcon color='secondary'/>BillHome</Link>
             </div>
             <div className='lyric'>
-                <Link to='/Lyric'><LyricsIcon/>Lyrics</Link>
+                <Link to='/Lyric' className='links'><LyricsIcon color='secondary'/>Lyrics</Link>
+            </div>
+            <hr className='hrhub'></hr>
+            <div className='chub'>
+                <blockquote className='hub'>your coolest music hub</blockquote>
+            </div>
+            <div className='mycopy'>
+                <p className='copy'>&copy;MusicHub,{yr}all rights reserved</p>
             </div>
         </div>
     </div>

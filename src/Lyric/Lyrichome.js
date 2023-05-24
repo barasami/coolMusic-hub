@@ -12,7 +12,7 @@ function Lyrichome() {
         })
     },[])
   return (
-    <div>Lyrichome</div>
+    <div className='relative'>Lyrichome</div>
   )
 }
 
