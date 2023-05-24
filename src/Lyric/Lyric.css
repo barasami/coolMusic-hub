@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.relative{
+    margin-left: 32%;
+    padding-right: 53%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 90vh;
+    position: fixed;
+    background-color:#bdbdbd;
+}
+

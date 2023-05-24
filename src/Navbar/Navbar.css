@@ -13,7 +13,7 @@
     
 }
 .items{
-    /* background-color: seagreen; */
+    background-color: #e0e0e0;
     height: 90%;
     padding: 2em;
     justify-content: space-evenly;
@@ -21,6 +21,7 @@
 .title{
     letter-spacing: .1em;
     text-transform: capitalize;
+    color: #424242;
 }
 .home{
     margin-top: 2em;
@@ -48,10 +49,12 @@
     text-decoration: none;
     padding-right: .1em;
     margin: .1em;
+    color: #424242;
 }
 .mycopy{
     margin-top: 2.5em;
 }
 .copy{
     letter-spacing: .1em;
+    color: #424242;
 }
