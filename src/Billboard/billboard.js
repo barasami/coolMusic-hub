@@ -3,7 +3,6 @@ import axios from 'axios';
 const Url='https://billboard-api2.p.rapidapi.com/hot-100'
 
 const options = {
-  method: 'GET',
   params: {
     date: '2019-05-11',
     range: '1-10'

@@ -25,7 +25,7 @@ function Navbar() {
             </div>
             <hr className='hrhub'></hr>
             <div className='chub'>
-                <blockquote className='hub'>your coolest music hub</blockquote>
+                <blockquote className='hub'>"your coolest music hub"</blockquote>
             </div>
             <div className='mycopy'>
                 <p className='copy'>&copy;MusicHub,{yr}all rights reserved</p>

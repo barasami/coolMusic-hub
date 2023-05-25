@@ -4,8 +4,8 @@
     margin: 0px;
 }
 .myNav{
-    padding-left: 10%;
-    padding-right: 70%;
+    padding-left: 7%;
+    padding-right: 69%;
     margin-top: 2%;
     margin-bottom: 2%;
     height: 100%;
@@ -56,5 +56,5 @@
 }
 .copy{
     letter-spacing: .1em;
-    color: #424242;
+    color: purple;
 }

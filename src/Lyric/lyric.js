@@ -3,7 +3,6 @@ import axios from 'axios';
 const Url='https://l-yrics.p.rapidapi.com/'
 
 const options = {
-  method: 'GET',
   params: {
     song: 'window shopper',
     artist: '50cent'

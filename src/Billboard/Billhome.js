@@ -3,11 +3,14 @@ import { myBillbord } from './billboard'
 
 function Billhome() {
     const[bill,setbill]=useState([])
+    const[load,setLoad]=useState(false)
 
     useEffect(()=>{
+        setLoad(true)
         myBillbord()
         .then(({data})=>{
             setbill(data)
+            setLoad(false)
             console.log(data);
         })
     },[])

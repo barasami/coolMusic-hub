@@ -3,6 +3,14 @@
     padding: 0px;
     margin: 0px;
 }
+.ptitle{
+    margin-bottom: 2em;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .relative{
     margin-left: 32%;
@@ -11,6 +19,18 @@
     margin-bottom: 2%;
     height: 90vh;
     position: fixed;
-    background-color:#bdbdbd;
+    background-color:#e0e0e0;
+    width: 100%;
+}
+.alignment{
+ margin-left: 10%;
+ margin-right: 10%;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+}
+
+.content{
+  
 }
 

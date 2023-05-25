@@ -3,7 +3,6 @@ import axios from 'axios';
 const Url='https://spotify23.p.rapidapi.com/search/'
 
 const options = {
-    method: 'GET',
     params: {
       q: '50cent',
       type: 'multi',
