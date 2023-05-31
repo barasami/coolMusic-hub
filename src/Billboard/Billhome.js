@@ -14,8 +14,24 @@ function Billhome() {
             console.log(data);
         })
     },[])
+
+    const mydownload =bill?.result?.list
+    
+    const Colldownload=mydownload?.map((data)=>{
+      const{album,album_image}=data
+      return(
+        <div key={album}>
+          <div>{album}</div>
+          <div>
+            <img src={album_image} alt={album}/>
+          </div>
+        </div>
+      )
+    })
   return (
-    <div className='relative'>Billhome</div>
+    <div className='relative'>
+      {Colldownload}
+    </div>
   )
 }
 

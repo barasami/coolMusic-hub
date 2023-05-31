@@ -6,6 +6,7 @@ const Url='https://l-yrics.p.rapidapi.com/'
 export const getLyric=async(mysong,myartist)=>{
     try {
         const response = await axios.get(Url,{
+          method: 'GET',
           params: {
             song: `${mysong}`,
             artist: `${myartist}`

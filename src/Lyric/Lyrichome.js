@@ -3,6 +3,9 @@ import { getLyric } from './lyric'
 import './Lyric.css'
 import Lyricform from '../Forms/Lyricform'
 
+import CircularProgress from '@mui/material/CircularProgress';
+
+
 
 function Lyrichome() {
     const[lyric,setLyric]=useState([])
@@ -50,11 +53,12 @@ function Lyrichome() {
             {song}
           </div>
         </div>
+        {load? <CircularProgress color='inherit' className='circular'/> : 
         <div className='content'>
          <p className='paragraph'>
           {lyrics}
          </p>
-        </div>
+        </div>}
      </div>
     
     </div>
