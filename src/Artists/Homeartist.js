@@ -18,19 +18,40 @@ function Homeartist() {
     },[])
 
     let artists=artist?.artists
-    let albums=artist?.albums
+    let albums=artist?.albums?.items
     let episodes=artist?.episodes
     let genres=artist?.genres
-    let playlists=artist?.playlists
+    let playlists=artist?.playlists?.items
     let tracks=artist?.tracks
     let users=artist?.users
     let topResults=artist?.topResults
+    // console.log(artist);
+    // console.log(albums);
+    console.log(episodes);
+    // console.log(genres);
+    // console.log(playlists);
+    // console.log(tracks);
+    // console.log(users);
+
+    let myepisodes=episodes?.items
+    console.log(myepisodes);
+    const Mycoleps=myepisodes?.map((data)=>{
+      const{description}=data
+
+      return(
+        <>
+          <div>{description}</div>
+        </>
+      )
+
+    })
+    
   return (
     <div className='relative'>
       <div className='myhome'>
         <p className='title'>MUSIC HUB</p>
         <div>
-          <p>data</p>
+          {Mycoleps}
         </div>
       </div>
     </div>
