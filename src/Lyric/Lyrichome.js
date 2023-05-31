@@ -8,19 +8,29 @@ function Lyrichome() {
     const[lyric,setLyric]=useState([])
     const[load,setLoad]=useState(false)
 
+    const[mysong,setSong]=useState('Gods plan')
+    const[myartist,setArtist]=useState('Drake')
+
     useEffect(()=>{
         setLoad(true)
-        getLyric()
+        getLyric(mysong,myartist)
         .then(({data})=>{
             setLyric(data)
             setLoad(false)
             console.log(data);
         })
-    },[])
+    },[mysong,myartist])
 
     const artist=lyric?.artist 
     const song =lyric?.song 
     const lyrics=lyric?.lyrics
+
+    const getArtists=(artist)=>{
+      setArtist(artist)
+    }
+    const getSongs=(song)=>{
+      setSong(song)
+    }
 
   return (
     <div className='relative'>
@@ -29,7 +39,8 @@ function Lyrichome() {
           <h3 className='title'>Lyrics Hub</h3>
         </div>
         <div>
-          <Lyricform/>
+          <Lyricform getArtists={getArtists}
+          getSongs={getSongs}/>
         </div>
         <div>
           <div>
