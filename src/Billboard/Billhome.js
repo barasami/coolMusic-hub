@@ -8,7 +8,7 @@ function Billhome() {
     useEffect(()=>{
         setLoad(true)
         myBillbord()
-        .then((data)=>{
+        .then(({data})=>{
             setbill(data)
             setLoad(false)
             console.log(data);

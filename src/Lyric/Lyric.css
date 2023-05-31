@@ -17,8 +17,6 @@
     padding-right: 53%;
     margin-top: 2%;
     margin-bottom: 2%;
-    height: 90vh;
-    position: fixed;
     background-color:#e0e0e0;
     width: 100%;
 }
@@ -29,6 +27,7 @@
  justify-content: center;
  width: 100%;
 }
+
 
 .content{
   padding: 1em;

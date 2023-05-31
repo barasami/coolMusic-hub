@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { getLyric } from './lyric'
 import './Lyric.css'
+import Lyricform from '../Forms/Lyricform'
 
 
 function Lyrichome() {
@@ -28,6 +29,9 @@ function Lyrichome() {
           <h3 className='title'>Lyrics Hub</h3>
         </div>
         <div>
+          <Lyricform/>
+        </div>
+        <div>
           <div>
             {artist}
           </div>
@@ -36,7 +40,9 @@ function Lyrichome() {
           </div>
         </div>
         <div className='content'>
+         <p className='paragraph'>
           {lyrics}
+         </p>
         </div>
      </div>
     
