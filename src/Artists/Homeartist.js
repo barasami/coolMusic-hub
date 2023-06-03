@@ -25,26 +25,7 @@ function Homeartist() {
     let tracks=artist?.tracks
     let users=artist?.users
     let topResults=artist?.topResults
-    // console.log(artist);
-    // console.log(albums);
-    console.log(episodes);
-    // console.log(genres);
-    // console.log(playlists);
-    // console.log(tracks);
-    // console.log(users);
-
-    let myepisodes=episodes?.items
-    console.log(myepisodes);
-    const Mycoleps=myepisodes?.map((data)=>{
-      const{description}=data
-
-      return(
-        <>
-          <div>{description}</div>
-        </>
-      )
-
-    })
+    
     
   return (
     <div className='relative'>

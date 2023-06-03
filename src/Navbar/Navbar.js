@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import HomeIcon from '@mui/icons-material/Home';
-import LyricsIcon from '@mui/icons-material/Lyrics';
-import AudiotrackIcon from '@mui/icons-material/Audiotrack';
 import './Navbar.css'
 
 function Navbar() {
