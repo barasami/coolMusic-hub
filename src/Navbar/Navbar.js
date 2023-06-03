@@ -17,12 +17,6 @@ function Navbar() {
             <div className='home'>
                 <Link to='/' className='links'><HomeIcon color='secondary'/>Home</Link>
             </div>
-            <div className='Bill'>
-                <Link to='/Bil' className='links'><AudiotrackIcon color='secondary'/>BillHome</Link>
-            </div>
-            <div className='lyric'>
-                <Link to='/Lyric' className='links'><LyricsIcon color='secondary'/>Lyrics</Link>
-            </div>
             <hr className='hrhub'></hr>
             <div className='chub'>
                 <blockquote className='hub'>"your coolest music hub"</blockquote>
