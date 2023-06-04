@@ -19,4 +19,9 @@
     letter-spacing: .1em;
     text-transform: capitalize;
 }
+.head{
+    transform: rotateY('45');
+    transform:rotate(-15deg);
+    margin-right: .3em;
+}
 

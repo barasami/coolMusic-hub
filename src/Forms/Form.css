@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.mydivs{
+    padding: .4em;
+}
+.txt{
+    padding: .3em;
+    border: 1px solid seagreen;
+    border-radius: .8em;
+}
+.btn{
+    padding: .3em;
+    border: 1px solid seagreen;
+    border-radius: .8em;
+}

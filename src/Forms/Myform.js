@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './Form.css'
 
 function Myform({UpdateArtist}) {
 
@@ -13,13 +14,13 @@ function Myform({UpdateArtist}) {
     }
   return (
     <div>
-        <form onSubmit={mysubMit}>
-            <div>
-                <input type='text' placeholder='Artist' 
+        <form onSubmit={mysubMit} className='form'>
+            <div className='mydivs' >
+                <input type='text' placeholder='Artist....'  className='txt'
                 value={artist} onChange={(e)=>setArtist(e.target.value)}/>
             </div>
-            <div>
-                <button>search</button>
+            <div className='mydivs'>
+                <button className='btn'>search</button>
             </div>
         </form>
     </div>

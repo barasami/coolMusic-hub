@@ -3,6 +3,7 @@ import { getArtist } from './artist'
 import { CircularProgress } from '@mui/material'
 import './Artist.css'
 import Myform from '../Forms/Myform'
+import HeadphonesIcon from '@mui/icons-material/Headphones';
 
 function Homeartist() {
     const[artist,setArtist]=useState([])
@@ -36,7 +37,7 @@ function Homeartist() {
   return (
     <div className='results'>
       <div className='myresults'>
-        <p className='title'>MUSIC HUB</p>
+        <p className='title'><HeadphonesIcon className='head' color='success'/>MUSIC HUB</p>
         <div>
           <Myform UpdateArtist={UpdateArtist}/>
         </div>
