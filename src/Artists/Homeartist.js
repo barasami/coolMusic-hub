@@ -34,8 +34,8 @@ function Homeartist() {
     
     
   return (
-    <div>
-      <div>
+    <div className='results'>
+      <div className='myresults'>
         <p className='title'>MUSIC HUB</p>
         <div>
           <Myform UpdateArtist={UpdateArtist}/>
