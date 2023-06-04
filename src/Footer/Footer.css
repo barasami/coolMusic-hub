@@ -11,19 +11,5 @@
   margin-top: 1em;
   width: 100%;
   margin-top: 1em;
-  background-color:#e0e0e0;
-}
-.fword{
-  margin-top: .1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.myfooter{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: purple;
-  letter-spacing: .1em;
-  font-weight: bold;
+ 
 }

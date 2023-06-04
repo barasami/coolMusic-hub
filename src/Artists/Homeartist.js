@@ -2,20 +2,26 @@ import React, { useEffect, useState } from 'react'
 import { getArtist } from './artist'
 import { CircularProgress } from '@mui/material'
 import './Artist.css'
+import Myform from '../Forms/Myform'
 
 function Homeartist() {
     const[artist,setArtist]=useState([])
+    const[myartist,setMyartist]=useState('50cent')
     const[load,setLoad]=useState(false)
+
+    const UpdateArtist=(updated)=>{
+      setMyartist(updated)
+    }
 
     useEffect(()=>{
         setLoad(true)
-        getArtist()
+        getArtist(myartist)
         .then(({data})=>{
             setArtist(data)
             setLoad(false)
             console.log(data);
         })
-    },[])
+    },[myartist])
 
     let artists=artist?.artists
     let albums=artist?.albums?.items
@@ -28,11 +34,11 @@ function Homeartist() {
     
     
   return (
-    <div className='relative'>
-      <div className='myhome'>
+    <div>
+      <div>
         <p className='title'>MUSIC HUB</p>
         <div>
-          {Mycoleps}
+          <Myform UpdateArtist={UpdateArtist}/>
         </div>
       </div>
     </div>
