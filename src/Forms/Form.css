@@ -5,6 +5,17 @@
     
 }
 
+.coolform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+.form{
+    position: fixed;
+    
+}
+
 .mydivs{
     padding: .4em;
 }
@@ -17,4 +28,6 @@
     padding: .3em;
     border: 1px solid seagreen;
     border-radius: .8em;
+    justify-content: stretch;
+    width: 100%;
 }

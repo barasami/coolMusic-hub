@@ -13,7 +13,7 @@ function Myform({UpdateArtist}) {
         setArtist( ' ')
     }
   return (
-    <div>
+    <div className='coolform'>
         <form onSubmit={mysubMit} className='form'>
             <div className='mydivs' >
                 <input type='text' placeholder='Artist....'  className='txt'

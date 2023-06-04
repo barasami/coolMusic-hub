@@ -25,10 +25,10 @@ function Homeartist() {
     },[myartist])
 
     let artists=artist?.artists
-    let albums=artist?.albums?.items
+    let albums=artist?.albums
     let episodes=artist?.episodes
     let genres=artist?.genres
-    let playlists=artist?.playlists?.items
+    let playlists=artist?.playlists
     let tracks=artist?.tracks
     let users=artist?.users
     let topResults=artist?.topResults
