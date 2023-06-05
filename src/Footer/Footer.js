@@ -11,7 +11,12 @@ function Footer() {
   return (
     <div className='footer'>
         <div className='fword'>
-          <p className='myfooter'>{format}</p>
+          <div className='format'>
+            <p className='myfooter'>{format}</p>
+          </div>
+          <div className='right'>
+            <p>&copy;MusicHub all rights reserved</p>
+          </div>
         </div>
     </div>
   )

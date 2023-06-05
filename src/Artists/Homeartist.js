@@ -6,6 +6,7 @@ import Myform from '../Forms/Myform'
 import HeadphonesIcon from '@mui/icons-material/Headphones';
 
 function Homeartist() {
+    let title='MUSIC HUB'
     const[artist,setArtist]=useState([])
     const[myartist,setMyartist]=useState('50cent')
     const[load,setLoad]=useState(false)
@@ -37,9 +38,12 @@ function Homeartist() {
   return (
     <div className='results'>
       <div className='myresults'>
-        <p className='title'><HeadphonesIcon className='head' color='success'/>MUSIC HUB</p>
+        <p className='title'><HeadphonesIcon className='head' color='inherit'/>{title}</p>
         <div>
           <Myform UpdateArtist={UpdateArtist}/>
+        </div>
+        <div className='body'>
+          
         </div>
       </div>
     </div>
