@@ -21,18 +21,26 @@ function Homeartist() {
         .then(({data})=>{
             setArtist(data)
             setLoad(false)
-            console.log(data);
         })
     },[myartist])
 
     let artists=artist?.artists
-    let albums=artist?.albums
+    let albumss=artist?.albums
     let episodes=artist?.episodes
     let genres=artist?.genres
     let playlists=artist?.playlists
-    let tracks=artist?.tracks
-    let users=artist?.users
+    let tracks=artist?.tracks?.items
     let topResults=artist?.topResults
+
+
+    
+    
+
+    
+
+    
+    
+    
     
     
   return (
@@ -43,7 +51,9 @@ function Homeartist() {
           <Myform UpdateArtist={UpdateArtist}/>
         </div>
         <div className='body'>
-          
+          <div>
+           {}
+          </div>
         </div>
       </div>
     </div>
