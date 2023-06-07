@@ -28,13 +28,44 @@ function Homeartist() {
     let artists=artist?.artists?.items
     let albumss=artist?.items?.items
     let episodes=artist?.episodes?.items
-    let genres=artist?.genres?.items
     let playlists=artist?.playlists?.items
     let tracks=artist?.tracks?.items
 
     let topFeature=artist?.topResults?.featured
-    let topItems=artist?.topResults?.items
 
+    //episodes
+    const Myepisodes=episodes?.map((data)=>{
+      return(
+        <div>
+          <div>{data.name}</div>
+          <div>{data.description}</div>
+        </div>
+      )
+    })
+    
+    //features
+    const Myfeature=topFeature?.map((data)=>{
+      return(
+        <div>
+          <div>{data.name}</div>
+          <div>{data.description}</div>
+          
+        </div>
+      )
+    })
+
+    //albums
+    const Myalbums=albumss?.map((data)=>{
+      return(
+        <div>
+          <div>{data.name}</div>
+          <div>{data.date.year}</div>
+          <div>{data.uri}</div>
+        </div>
+      )
+    })
+
+    //playlist
     const Myplaylist=playlists?.map(({data} )=>{
       return(
       <div key={data.id}>
@@ -49,6 +80,18 @@ function Homeartist() {
 
     })
 
+    //tracks
+    const Mytracks=tracks?.map((data)=>{
+      return(
+        <div>
+          <div>{data.name}</div>
+          <div>{data.contentRating?.label}</div>
+          <div>{data.uri}</div>
+        </div>
+      )
+    })
+
+     //myartists
     const Myartists=artists?.map(({data})=>{
 
       return(
@@ -81,6 +124,18 @@ function Homeartist() {
           </div>
           <div>
             {Myartists}
+          </div>
+          <div>
+            {Mytracks}
+          </div>
+          <div>
+            {Myfeature}
+          </div>
+          <div>
+            {Myalbums}
+          </div>
+          <div>
+            {Myepisodes}
           </div>
         </div>
       </div>
