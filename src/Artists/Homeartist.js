@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { getArtist } from './artist'
-import { CircularProgress } from '@mui/material'
+import { CircularProgress, Paper } from '@mui/material'
 import './Artist.css'
 import Myform from '../Forms/Myform'
 import HeadphonesIcon from '@mui/icons-material/Headphones';
@@ -20,28 +20,53 @@ function Homeartist() {
         getArtist(myartist)
         .then(({data})=>{
             setArtist(data)
+            console.log(data);
             setLoad(false)
         })
     },[myartist])
 
-    let artists=artist?.artists
-    let albumss=artist?.albums
-    let episodes=artist?.episodes
-    let genres=artist?.genres
-    let playlists=artist?.playlists
+    let artists=artist?.artists?.items
+    let albumss=artist?.items?.items
+    let episodes=artist?.episodes?.items
+    let genres=artist?.genres?.items
+    let playlists=artist?.playlists?.items
     let tracks=artist?.tracks?.items
-    let topResults=artist?.topResults
 
+    let topFeature=artist?.topResults?.featured
+    let topItems=artist?.topResults?.items
+
+    const Myplaylist=playlists?.map(({data} )=>{
+      return(
+      <div key={data.id}>
+        <div>
+          {data.name}
+        </div>
+        <div>
+          {data.description}
+        </div>
+        
+      </div>)
+
+    })
+
+    const Myartists=artists?.map(({data})=>{
+
+      return(
+        <div>
+          <div>
+            {data.profile.name}
+          </div>
+        </div>
+      )
+    })
 
     
-    
+
+  
+  
 
     
 
-    
-    
-    
-    
     
   return (
     <div className='results'>
@@ -52,7 +77,10 @@ function Homeartist() {
         </div>
         <div className='body'>
           <div>
-           {}
+           {Myplaylist}
+          </div>
+          <div>
+            {Myartists}
           </div>
         </div>
       </div>
