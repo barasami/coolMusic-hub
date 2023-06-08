@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { getArtist } from './artist'
-import { CircularProgress, Paper } from '@mui/material'
+import { CircularProgress } from '@mui/material'
 import './Artist.css'
 import Myform from '../Forms/Myform'
 import HeadphonesIcon from '@mui/icons-material/Headphones';
@@ -31,6 +31,8 @@ function Homeartist() {
     let playlists=artist?.playlists?.items
     let tracks=artist?.tracks?.items
 
+    let podcast=artist?.podcasts?.items
+
     let topFeature=artist?.topResults?.featured
 
     //episodes
@@ -39,6 +41,21 @@ function Homeartist() {
         <div>
           <div>{data.name}</div>
           <div>{data.description}</div>
+        </div>
+      )
+    })
+
+    //podcasts
+
+    const Mypodcasts=podcast?.map((data)=>{
+      return(
+        <div>
+          <div>{data.name}</div>
+          <div>{data.mediaType}</div>
+          <div>{data.type}</div>
+          <div>
+            <a href={data.uri}>podcast</a>
+          </div>
         </div>
       )
     })
@@ -82,10 +99,12 @@ function Homeartist() {
 
     //tracks
     const Mytracks=tracks?.map((data)=>{
+      let playable=data.playability?.playable
       return(
         <div>
           <div>{data.name}</div>
           <div>{data.uri}</div>
+          <div>{playable}</div>
         </div>
       )
     })
@@ -136,6 +155,9 @@ function Homeartist() {
           </div>
           <div>
             {Myepisodes}
+          </div>
+          <div>
+            {Mypodcasts}
           </div>
       </div>
       }
