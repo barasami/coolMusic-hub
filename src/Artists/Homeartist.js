@@ -85,7 +85,6 @@ function Homeartist() {
       return(
         <div>
           <div>{data.name}</div>
-          <div>{data.contentRating?.label}</div>
           <div>{data.uri}</div>
         </div>
       )
@@ -118,14 +117,15 @@ function Homeartist() {
         <div>
           <Myform UpdateArtist={UpdateArtist}/>
         </div>
+        {load ? <CircularProgress color='inherit' className='circular'/> : 
         <div className='body'>
-          <div>
+          <div className='playlist'>
            {Myplaylist}
           </div>
-          <div>
+          <div className='artist'>
             {Myartists}
           </div>
-          <div>
+          <div className='tracks'>
             {Mytracks}
           </div>
           <div>
@@ -137,7 +137,8 @@ function Homeartist() {
           <div>
             {Myepisodes}
           </div>
-        </div>
+      </div>
+      }
       </div>
     </div>
   )

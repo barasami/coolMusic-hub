@@ -30,4 +30,18 @@
     margin-top: 15%;
     
 }
+.playlist{
+    /* background-color: green; */
+}
+.artist{
+    /* background-color: grey; */
+}
+.tracks{
+    /* background-color: yellow; */
+}
+.circular{
+    top: 50%;
+    right: 50%;
+    position: fixed;
+}
 
