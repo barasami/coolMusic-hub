@@ -39,7 +39,8 @@ function Homeartist() {
     const Myepisodes=episodes?.map((data)=>{
       return(
         <div>
-          <div>{data.name}</div>
+          <div className='title'>Episodes</div>
+          <div className='name'>{data.name}</div>
           <div>{data.description}</div>
         </div>
       )
@@ -50,12 +51,10 @@ function Homeartist() {
     const Mypodcasts=podcast?.map((data)=>{
       return(
         <div>
-          <div>{data.name}</div>
+          <div className='title'>Podcast</div>
+          <div className='name'>{data.name}</div>
           <div>{data.mediaType}</div>
           <div>{data.type}</div>
-          <div>
-            <a href={data.uri}>podcast</a>
-          </div>
         </div>
       )
     })
@@ -64,7 +63,8 @@ function Homeartist() {
     const Myfeature=topFeature?.map((data)=>{
       return(
         <div>
-          <div>{data.name}</div>
+          <div className='title'>Feature</div>
+          <div className='name'>{data.name}</div>
           <div>{data.description}</div>
           
         </div>
@@ -75,9 +75,9 @@ function Homeartist() {
     const Myalbums=albumss?.map((data)=>{
       return(
         <div>
-          <div>{data.name}</div>
+          <div className='title'>Albums</div>
+          <div className='name'>{data.name}</div>
           <div>{data.date.year}</div>
-          <div>{data.uri}</div>
         </div>
       )
     })
@@ -86,7 +86,8 @@ function Homeartist() {
     const Myplaylist=playlists?.map(({data} )=>{
       return(
       <div key={data.id}>
-        <div>
+        <div className='title'>Playlist</div>
+        <div className='name'>
           {data.name}
         </div>
         <div>
@@ -102,8 +103,8 @@ function Homeartist() {
       let playable=data.playability?.playable
       return(
         <div>
-          <div>{data.name}</div>
-          <div>{data.uri}</div>
+          <div className='title'>Tracks</div>
+          <div className='name'>{data.name}</div>
           <div>{playable}</div>
         </div>
       )
@@ -114,7 +115,8 @@ function Homeartist() {
 
       return(
         <div>
-          <div>
+          <div className='title'> Artists</div>
+          <div className='name'>
             {data.profile.name}
           </div>
         </div>

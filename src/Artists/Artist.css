@@ -44,4 +44,13 @@
     right: 50%;
     position: fixed;
 }
+.name{
+    color: seagreen;
+    text-transform: capitalize;
+}
+.title{
+    text-transform: uppercase;
+    color: purple;
+    letter-spacing: .2em;
+}
 
