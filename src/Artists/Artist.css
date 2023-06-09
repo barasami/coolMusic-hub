@@ -31,14 +31,18 @@
     
 }
 .playlist{
-    /* background-color: green; */
+   margin-left: auto;
+   margin-right: auto;
+   align-items: center;
+   justify-content: center;
 }
 .artist{
-    /* background-color: grey; */
+    margin-left: auto;
+   margin-right: auto;
+   align-items: center;
+   justify-content: center;
 }
-.tracks{
-    /* background-color: yellow; */
-}
+
 .circular{
     top: 50%;
     right: 50%;
@@ -53,7 +57,5 @@
     color: purple;
     letter-spacing: .2em;
 }
-.albums{
-    background-color: seagreen;
-}
+
 

@@ -95,7 +95,7 @@ function Homeartist() {
           <div className='artist'>
             {Myartists}
           </div>
-          <div>
+          <div className='album'>
             {Myalbums}
           </div>
          
